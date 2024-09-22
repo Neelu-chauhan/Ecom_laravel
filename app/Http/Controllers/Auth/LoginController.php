@@ -31,4 +31,15 @@ class LoginController extends Controller
             return redirect()->route('login.index')->with('error','Please Login');
         }
     }
+
+
+    public function logout(){
+        $logout= Auth::logout();
+        if($logout){
+
+            return redirect()->route('login.index')->with('success','Logout Successfully');
+        }else{
+            return redirect()->back()->with('error','Failed to Logout');
+        }
+    }
 }

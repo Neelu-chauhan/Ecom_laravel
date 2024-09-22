@@ -18,7 +18,27 @@
 
 <!-- Place this tag before closing body tag for github widget button. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+<script>
+   
+    // logout confirmation
+   function confirmation(e){
+        e.preventDefault();
+       var link = e.currentTarget.getAttribute('href');
+       Swal.fire({
+               title: "Are you sure you want to logout?",
+               text: "",
+               icon: "warning",
+               showCancelButton: true,
+               confirmButtonText: "Yes, logout!",
+               cancelButtonText: "No, stay here",
+           }).then((result) => {
+               if (result.isConfirmed) {
+                   window.location.href = link;
+               } 
+           });
+   }
+</script>
 
 </body>
 </html>
