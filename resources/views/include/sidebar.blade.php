@@ -83,16 +83,12 @@
                       </a>
                   </li>
                   <li class="menu-item">
-                      <a href="layouts-without-navbar.html" class="menu-link">
-                          <div class="text-truncate" data-i18n="Without navbar">Without navbar</div>
+                      <a href="{{route('subcat.index')}}" class="menu-link">
+                          <div class="text-truncate" data-i18n="Without navbar">Sub-Category</div>
                       </a>
                   </li>
-                  <li class="menu-item">
-                      <a href="layouts-fluid.html" class="menu-link">
-                          <div class="text-truncate" data-i18n="Fluid">Fluid</div>
-                      </a>
-                  </li>
-                  <li class="menu-item">
+            
+                  {{-- <li class="menu-item">
                       <a href="layouts-container.html" class="menu-link">
                           <div class="text-truncate" data-i18n="Container">Container</div>
                       </a>
@@ -101,7 +97,7 @@
                       <a href="layouts-blank.html" class="menu-link">
                           <div class="text-truncate" data-i18n="Blank">Blank</div>
                       </a>
-                  </li>
+                  </li> --}}
               </ul>
           </li>
 
@@ -113,15 +109,15 @@
               </a>
               <ul class="menu-sub">
                   <li class="menu-item">
-                      <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/front-pages/landing-page.html"
-                          class="menu-link" target="_blank">
-                          <div class="text-truncate" data-i18n="Landing">Landing</div>
+                      <a href="{{route('product-type.index')}}"
+                          class="menu-link">
+                          <div class="text-truncate" data-i18n="Landing">Product type</div>
                       </a>
                   </li>
                   <li class="menu-item">
-                      <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/front-pages/pricing-page.html"
-                          class="menu-link" target="_blank">
-                          <div class="text-truncate" data-i18n="Pricing">Pricing</div>
+                      <a href="{{route('product.index')}}"
+                          class="menu-link">
+                          <div class="text-truncate" data-i18n="Product List">Product List</div>
                       </a>
                   </li>
                   <li class="menu-item">

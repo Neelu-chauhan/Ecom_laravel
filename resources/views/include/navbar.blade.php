@@ -15,12 +15,8 @@
         <!-- Search -->
         <div class="navbar-nav align-items-center">
           <div class="nav-item d-flex align-items-center">
-            <i class="bx bx-search bx-md"></i>
-            <input
-              type="text"
-              class="form-control border-0 shadow-none ps-1 ps-sm-2"
-              placeholder="Search..."
-              aria-label="Search..." />
+            <h2 class="p-2">Welcome ,</h2>
+           <h3 class="mx-3">{{Auth::user()->name}}</h3>
           </div>
         </div>
         <!-- /Search -->
